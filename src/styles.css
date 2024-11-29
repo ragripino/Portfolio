@@ -31,10 +31,160 @@ body {
   color: #333;
 }
 
+/* Hello Section */
 #hello {
   position: relative;
   text-align: center;
   padding: 100px 20px;
-  background: #f7f7f7;
+  background: #dfb118;
   overflow: hidden;
+}
+
+.hello-content {
+  z-index: 2;
+  position: relative;
+}
+
+.hello-content h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+.hello-content h1 span {
+  color: #fff;
+}
+
+.hello-content p {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+.hello-content .btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #fff;
+  color: #dfb118;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: transform 0.3s, backgground o.3s;
+}
+
+.hello-content .btn-primary:hover {
+  transform: scale(1.1);
+  background: #e63946;
+}
+/* Shapes for Hello Section */
+
+.hello.shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.hello.shapes .circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.hello.shapes .circle.red {
+  width: 200px;
+  height: 200px;
+  background: #368964;
+  top: 20%;
+  left: 10%;
+}
+
+.hello.shapes .circle.black {
+  width: 150px;
+  height: 150px;
+  background: #333;
+  bottom: 10%;
+  right: 15%;
+}
+/* about section*/
+#about {
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+.about-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+}
+.text-content {
+  flex: 1;
+  position: relative;
+}
+
+.text-content h2 {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.text-content p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #5a5a5a;
+  margin-bottom: 20px;
+}
+.text-content .skills {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.text-content .skills li {
+  background: #dfb118;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+
+.image-content {
+  position: relative;
+  flex: 1;
+}
+
+.image-content img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.image-content .image-decoration {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #368964;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+}
+
+/* Footer Section */
+.footer {
+  background: #dfb118;
+  color: #333;
+  padding: 40 px 20 px 20px;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
 }
